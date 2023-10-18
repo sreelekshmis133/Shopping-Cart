@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shopping Cart"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:padding="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@+id/titleTextView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end">
+
+        <LinearLayout
+            android:id="@+id/bottomTextLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="start"
+            android:padding="16dp">
+
+            <!-- Total Amount -->
+            <TextView
+                android:id="@+id/totalAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Amount"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+            <!-- Delivery Charge -->
+            <TextView
+                android:id="@+id/deliveryCharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delivery Charge"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+            <!-- Coupon Discount -->
+            <TextView
+                android:id="@+id/couponDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coupon Discount"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+            <!-- Tax -->
+            <TextView
+                android:id="@+id/tax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tax"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+            <!-- Total -->
+            <TextView
+                android:id="@+id/overallTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textSize="14sp"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomTextValueLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="end"
+            android:padding="16dp">
+
+            <!-- Total Amount Value -->
+            <TextView
+                android:id="@+id/totalAmountValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="₹"
+                android:textSize="14sp"
+                android:gravity="end"
+                android:padding="8dp" />
+
+            <!-- Delivery Charge Value -->
+            <TextView
+                android:id="@+id/deliveryChargeValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Free"
+                android:gravity="end"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+            <!-- Coupon Discount Value -->
+            <TextView
+                android:id="@+id/couponDiscountValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-  0"
+                android:gravity="end"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+            <!-- Tax Value -->
+            <TextView
+                android:id="@+id/taxValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="₹192"
+                android:gravity="end"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+            <!-- Overall Total Value -->
+            <TextView
+                android:id="@+id/overallTotalValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="end"
+                android:textSize="14sp"
+                android:padding="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
