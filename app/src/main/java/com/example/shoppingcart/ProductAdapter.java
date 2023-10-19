@@ -81,7 +81,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
 
     private void applyCoupon(ViewHolder holder, ProductModel product) {
         String couponCode = holder.couponEditText.getText().toString();
-        String discountRate = couponCode.replaceFirst(".*?(\\d+).*", "₹1");
+        String discountRate = couponCode.replaceFirst(".*?(\\d+).*", "$1");
 
         Log.i("discountRate", discountRate);
 
